@@ -9,8 +9,11 @@ export default function Header() {
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <Link to="/" className="flex items-center">
             <img
-              src="https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png"
+              // src="https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png"
+
+              src="https://static.vecteezy.com/system/resources/thumbnails/003/345/403/small/education-logo-template-design-icon-illustration-vector.jpg"
               className="mr-3 h-12"
+              // width={50}
               alt="Logo"
             />
           </Link>
@@ -54,7 +57,6 @@ export default function Header() {
                       isActive ? "text-gray-700" : "text-orange-700"
                     }border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                   }
-                  //use of callback in classname so that style can be managed as per click of button
                 >
                   About 
                 </NavLink>
@@ -67,7 +69,6 @@ export default function Header() {
                       isActive ? "text-gray-700" : "text-orange-700"
                     }border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                   }
-                  //use of callback in classname so that style can be managed as per click of button
                 >
                   Contact
                 </NavLink>
@@ -80,7 +81,6 @@ export default function Header() {
                       isActive ? "text-gray-700" : "text-orange-700"
                     }border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                   }
-                  //use of callback in classname so that style can be managed as per click of button
                 >
                   Github
                 </NavLink>
