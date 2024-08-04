@@ -1,11 +1,10 @@
 import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
-import {useLoaderData} from 'react-router-dom'
+import { useLoaderData } from "react-router-dom";
 
 function Github() {
-
-const data = useLoaderData();
+  const data = useLoaderData();
 
   /*
   const [data,setData] = useState([])
@@ -16,7 +15,6 @@ const data = useLoaderData();
       setData(data)
     })
   }, []);
-
   */
 
   return (
@@ -25,14 +23,13 @@ const data = useLoaderData();
       <img src={data.avatar_url} alt="Git Pic" width={300}></img>
     </div>
   );
-  
-
 }
 
 export default Github;
 
-export const githubInfoLoader = async() => {
-  const response = await  fetch("https://api.github.com/users/anuradhakumari2025")
-  return response.json()
-
-}
+export const githubInfoLoader = async () => {
+  const response = await fetch(
+    "https://api.github.com/users/anuradhakumari2025"
+  );
+  return response.json();
+};
